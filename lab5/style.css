@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+tr:hover {
+  background: #333;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.dark {
+  background: #111;
+  color: white;
+}
+
+.dark table,
+.dark th,
+.dark td {
+  border-color: #555;
+}

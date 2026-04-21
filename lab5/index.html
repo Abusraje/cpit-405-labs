@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<input type="text" id="search" placeholder="Search players...">
+
+<select id="filter">
+  <option value="all">All</option>
+  <option value="PHI">PHI</option>
+  <option value="NYK">NYK</option>
+  <option value="OKC">OKC</option>
+  <option value="CLE">CLE</option>
+</select>
+
+<button id="darkBtn">Toggle Dark Mode</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Team</th>
+      <th>Points</th>
+      <th>Rebounds</th>
+      <th>Assists</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>

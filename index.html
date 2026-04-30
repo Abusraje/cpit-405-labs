@@ -1,122 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Omar Bakhidahr | IT Portfolio</title>
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg,#0f172a,#1e293b);
-  color:white;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:30px;
-}
-
-.container{
-  width:100%;
-  max-width:900px;
-  background: rgba(255,255,255,0.08);
-  border:1px solid rgba(255,255,255,0.15);
-  border-radius:20px;
-  padding:40px;
-  backdrop-filter: blur(10px);
-  box-shadow:0 20px 40px rgba(0,0,0,0.3);
-}
-
-h1{
-  font-size:2.5rem;
-  margin-bottom:10px;
-}
-
-p{
-  color:#cbd5e1;
-  margin-bottom:30px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:rgba(255,255,255,0.06);
-  padding:25px;
-  border-radius:16px;
-  text-align:center;
-  transition:0.3s ease;
-  border:1px solid rgba(255,255,255,0.08);
-}
-
-.card:hover{
-  transform:translateY(-8px);
-  background:rgba(255,255,255,0.12);
-}
-
-.card a{
-  color:white;
-  text-decoration:none;
-  font-size:1.2rem;
-  font-weight:bold;
-}
-
-.footer{
-  margin-top:30px;
-  font-size:0.9rem;
-  color:#94a3b8;
-  text-align:center;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar Bakhidhar — IT Portfolio</title>
+  <meta name="description" content="Omar Bakhidhar — Information Technology student, creative professional, and media enthusiast based in Jeddah, Saudi Arabia." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
-
 <body>
 
-<div class="container">
-  <h1>Omar Bakhidahr</h1>
-  <p>Student Portfolio • IT 1 • ID: 2237708</p>
+<!-- Rain Canvas -->
+<canvas id="rain-canvas" aria-hidden="true"></canvas>
 
-  <div class="grid">
+<!-- Navigation -->
+<nav aria-label="Main navigation">
+  <a href="index.html" class="nav-brand">Omar <span>Bakhidhar</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="labs.html">Labs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-    <div class="card">
-      <a href="lab2/index.html">Lab 2</a>
-    </div>
-
-    <div class="card">
-      <a href="lab3/index.html">Lab 3</a>
-    </div>
-
-    <div class="card">
-      <a href="lab4/index.html">Lab 4</a>
-    </div>
-
-    <div class="card">
-      <a href="lab5/index.html">Lab 5</a>
-    </div>
-    
-    <div class="card">
-      <a href="lab6/index.html">Lab 6</a>
-    </div>
-
-        <div class="card">
-      <a href="lab7/index.html">Lab 7</a>
-    </div>
-  </div>
-
-  <div class="footer">
-    Built with HTML & CSS
-  </div>
+<!-- Mobile Menu -->
+<div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="cv.html">CV</a>
+  <a href="labs.html">Labs</a>
+  <a href="contact.html">Contact</a>
 </div>
 
+<div class="page-wrapper">
+
+  <!-- ── HERO ── -->
+  <section class="hero" aria-labelledby="hero-name">
+    <div class="hero-eyebrow">Student ID: 2237708</div>
+
+    <h1 class="hero-name" id="hero-name">
+      <span class="first">Omar</span>
+      <span class="last">Bakhidhar</span>
+    </h1>
+
+    <p class="hero-tagline">
+      <span class="hero-typing" aria-live="polite">IT Professional</span>
+    </p>
+
+    <p class="hero-id">
+      Information Technology · <span>King Abdulaziz University</span> · Jeddah, Saudi Arabia
+    </p>
+
+    <div class="hero-cta">
+      <a href="cv.html" class="btn btn-primary">View CV</a>
+      <a href="labs.html" class="btn btn-outline">Browse Labs</a>
+      <a href="contact.html" class="btn btn-pink">Get in Touch</a>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── STATS BAR ── -->
+  <div class="stats-bar reveal" role="list">
+    <div class="stat-item" role="listitem">
+      <div class="stat-number">2+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item" role="listitem">
+      <div class="stat-number">10+</div>
+      <div class="stat-label">Events Coordinated</div>
+    </div>
+    <div class="stat-item" role="listitem">
+      <div class="stat-number">6</div>
+      <div class="stat-label">Labs Completed</div>
+    </div>
+    <div class="stat-item" role="listitem">
+      <div class="stat-number">1</div>
+      <div class="stat-label">Certification</div>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ── -->
+  <section class="about-section" aria-labelledby="about-heading">
+    <div class="about-left reveal">
+      <div class="section-label">About</div>
+      <h2 class="section-title" id="about-heading">
+        Technology <em>meets</em><br>Creativity
+      </h2>
+    </div>
+
+    <div class="about-right reveal reveal-delay-2">
+      <p>
+        I'm an Information Technology student at King Abdulaziz University, blending technical depth with creative vision. My work spans IT operations, backend systems, PR coordination, and media production — a rare intersection that lets me build things and communicate them.
+      </p>
+      <p>
+        Currently active as an IT Specialist & PR Coordinator at Makhraj, where I manage operations, coordinate workshops, and represent the organization at cultural events including the Red Sea Film Festival 2026.
+      </p>
+      <p>
+        I believe the future belongs to people who can think in code <em>and</em> in stories.
+      </p>
+      <div class="skills-inline">
+        <span class="pill">HTML / CSS</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">Java</span>
+        <span class="pill">SQL</span>
+        <span class="pill">IT Operations</span>
+        <span class="pill">PR & Events</span>
+        <span class="pill-pink">Film</span>
+        <span class="pill-pink">Media</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── QUICK LINKS ── -->
+  <section class="quick-links-section" aria-labelledby="explore-heading">
+    <div class="section-label reveal">Explore</div>
+    <h2 class="section-title reveal reveal-delay-1" id="explore-heading">
+      What's <em>Inside</em>
+    </h2>
+
+    <div class="quick-links-grid">
+      <a href="cv.html" class="quick-link-card reveal reveal-delay-1" aria-label="View CV page">
+        <div class="qlc-icon">📄</div>
+        <div class="qlc-title">Curriculum Vitae</div>
+        <div class="qlc-desc">Education, experience, skills, and certifications</div>
+        <div class="qlc-arrow">→</div>
+      </a>
+      <a href="labs.html" class="quick-link-card reveal reveal-delay-2" aria-label="View Labs page">
+        <div class="qlc-icon">🧪</div>
+        <div class="qlc-title">Labs & Projects</div>
+        <div class="qlc-desc">Completed coursework and technical projects</div>
+        <div class="qlc-arrow">→</div>
+      </a>
+      <a href="contact.html" class="quick-link-card reveal reveal-delay-3" aria-label="View Contact page">
+        <div class="qlc-icon">✉️</div>
+        <div class="qlc-title">Contact</div>
+        <div class="qlc-desc">Let's connect — email, LinkedIn, and more</div>
+        <div class="qlc-arrow">→</div>
+      </a>
+      <a href="labs.html#assignments" class="quick-link-card reveal reveal-delay-4" aria-label="View Assignment 1">
+        <div class="qlc-icon">🎯</div>
+        <div class="qlc-title">Assignment 1</div>
+        <div class="qlc-desc">CPIT-405 Phase 1 — HTML & CSS Portfolio</div>
+        <div class="qlc-arrow">→</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── FILM SECTION ── -->
+  <section class="film-section" aria-labelledby="film-heading">
+    <div class="section-label reveal">Media & Film</div>
+    <h2 class="section-title reveal reveal-delay-1" id="film-heading">
+      Behind the <em>Camera</em>
+    </h2>
+    <p class="reveal reveal-delay-2" style="color: var(--text-secondary); max-width: 500px; margin-bottom: 0; margin-top: 0.5rem; font-size: 0.95rem;">
+      Alongside technology, I'm involved in independent film as an actor and crew member.
+    </p>
+
+    <div class="film-grid" style="margin-top: 40px;">
+      <div class="film-card reveal reveal-delay-1">
+        <div class="film-card-top">
+          <div>
+            <div class="film-title">Passing of a Sinner</div>
+            <div class="film-role">Extra — Upcoming</div>
+          </div>
+          <span class="pill-pink">Acting</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Upcoming feature film production.</p>
+      </div>
+      <div class="film-card reveal reveal-delay-2">
+        <div class="film-card-top">
+          <div>
+            <div class="film-title">Eat in the Corner</div>
+            <div class="film-role">Cast Manager — Upcoming</div>
+          </div>
+          <span class="pill-pink">Production</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Managing talent and cast logistics.</p>
+      </div>
+      <div class="film-card reveal reveal-delay-3">
+        <div class="film-card-top">
+          <div>
+            <div class="film-title">Red Sea Film Festival</div>
+            <div class="film-role">Represented Makhraj — 2025</div>
+          </div>
+          <span class="pill">Event</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Official representative at the Red Sea International Film Festival.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-left">Omar <span>Bakhidhar</span></div>
+  <ul class="footer-links">
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="labs.html">Labs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="footer-right">CPIT-405 · Spring 2026 · ID 2237708</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

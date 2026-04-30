@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Omar Bakhidhar</title>
+  <meta name="description" content="Get in touch with Omar Bakhidhar — IT professional and creative based in Jeddah, Saudi Arabia." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<canvas id="rain-canvas" aria-hidden="true"></canvas>
+
+<!-- Navigation -->
+<nav aria-label="Main navigation">
+  <a href="index.html" class="nav-brand">Omar <span>Bakhidhar</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="labs.html">Labs</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" role="navigation">
+  <a href="index.html">Home</a>
+  <a href="cv.html">CV</a>
+  <a href="labs.html">Labs</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page-wrapper">
+
+  <!-- Page Header -->
+  <header style="padding: 60px clamp(20px, 8vw, 120px) 20px;" aria-labelledby="contact-page-title">
+    <div class="section-label reveal">Reach Out</div>
+    <h1 class="section-title reveal reveal-delay-1" id="contact-page-title">
+      Let's <em>Connect</em>
+    </h1>
+    <p class="reveal reveal-delay-2" style="color: var(--text-secondary); font-size: 0.95rem; max-width: 480px; margin-top: 0.5rem;">
+      Whether it's about tech, a project, film, or collaboration — my inbox is open.
+    </p>
+  </header>
+
+  <!-- Contact Layout -->
+  <main class="contact-layout">
+
+    <!-- ── INFO SIDEBAR ── -->
+    <aside aria-label="Contact information">
+      <div class="contact-info-card reveal">
+        <div class="contact-info-title">Get in Touch</div>
+        <div class="contact-info-sub">Direct channels — no forms required</div>
+
+        <div class="contact-links">
+
+          <a href="mailto:owbakhidhar@gmail.com" class="contact-link-item" aria-label="Send email to Omar">
+            <div class="cli-icon" aria-hidden="true">✉️</div>
+            <div>
+              <div class="cli-label">Email</div>
+              <div class="cli-value">owbakhidhar@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="tel:+966565686626" class="contact-link-item" aria-label="Call Omar">
+            <div class="cli-icon" aria-hidden="true">📞</div>
+            <div>
+              <div class="cli-label">Phone</div>
+              <div class="cli-value">+966 565 686 626</div>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/omar-bakhidhar" target="_blank" rel="noopener noreferrer" class="contact-link-item" aria-label="Omar's LinkedIn profile (opens in new tab)">
+            <div class="cli-icon" aria-hidden="true">💼</div>
+            <div>
+              <div class="cli-label">LinkedIn</div>
+              <div class="cli-value">Omar Bakhidhar</div>
+            </div>
+          </a>
+
+          <a href="https://github.com/omarbakhidhar" target="_blank" rel="noopener noreferrer" class="contact-link-item" aria-label="Omar's GitHub profile (opens in new tab)">
+            <div class="cli-icon" aria-hidden="true">💻</div>
+            <div>
+              <div class="cli-label">GitHub</div>
+              <div class="cli-value">omarbakhidhar</div>
+            </div>
+          </a>
+
+          <a href="https://letterboxd.com/omarbakhidhar" target="_blank" rel="noopener noreferrer" class="contact-link-item" aria-label="Omar's Letterboxd profile (opens in new tab)">
+            <div class="cli-icon" aria-hidden="true">🎬</div>
+            <div>
+              <div class="cli-label">Letterboxd</div>
+              <div class="cli-value">omarbakhidhar</div>
+            </div>
+          </a>
+
+        </div>
+
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">Location</div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">
+            Jeddah, Makkah Region<br>Saudi Arabia 🇸🇦
+          </p>
+        </div>
+
+        <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.75rem;">Response Time</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">
+            Usually within <span style="color: var(--viridian-light);">24 hours</span>
+          </p>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- ── CONTACT FORM ── -->
+    <div class="contact-form-wrapper reveal reveal-delay-2">
+      <div class="form-title">Send a Message</div>
+      <div class="form-sub">Fill in the form — it goes straight to my inbox via FormSubmit.</div>
+
+      <!--
+        FormSubmit.co — free form backend.
+        Replace YOUR_EMAIL with owbakhidhar@gmail.com after first submission to activate.
+        On first use, FormSubmit sends a confirmation email to activate the endpoint.
+      -->
+      <form
+        id="contact-form"
+        action="https://formsubmit.co/owbakhidhar@gmail.com"
+        method="POST"
+        novalidate
+        aria-label="Contact form"
+      >
+        <!-- FormSubmit config (hidden) -->
+        <input type="hidden" name="_subject" value="New message from Portfolio — Omar Bakhidhar" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="" />
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Name *</label>
+            <input
+              type="text"
+              id="contact-name"
+              name="name"
+              class="form-input"
+              placeholder="Your name"
+              required
+              autocomplete="name"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Email *</label>
+            <input
+              type="email"
+              id="contact-email"
+              name="email"
+              class="form-input"
+              placeholder="your@email.com"
+              required
+              autocomplete="email"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="contact-subject">Subject</label>
+          <input
+            type="text"
+            id="contact-subject"
+            name="subject"
+            class="form-input"
+            placeholder="What's this about?"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Message Type</label>
+          <div class="form-radio-group" role="radiogroup" aria-label="Message type">
+            <label class="radio-label">
+              <input type="radio" name="message_type" value="Inquiry" checked />
+              Inquiry
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="message_type" value="Collaboration" />
+              Collaboration
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="message_type" value="Feedback" />
+              Feedback
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="contact-message">Message *</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            class="form-textarea"
+            placeholder="What's on your mind?"
+            required
+            aria-required="true"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit" style="width: 100%; justify-content: center; padding: 16px;">
+          Send Message →
+        </button>
+
+        <div class="form-success" id="form-success" role="alert" aria-live="polite">
+          ✓ Message sent — I'll get back to you within 24 hours.
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+</div>
+
+<footer>
+  <div class="footer-left">Omar <span>Bakhidhar</span></div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="labs.html">Labs</a></li>
+  </ul>
+  <div class="footer-right">CPIT-405 · Spring 2026 · ID 2237708</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

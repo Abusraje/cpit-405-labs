@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Labs — Omar Bakhidhar</title>
+  <meta name="description" content="Labs and completed coursework by Omar Bakhidhar — CPIT-405, King Abdulaziz University." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<canvas id="rain-canvas" aria-hidden="true"></canvas>
+
+<!-- Navigation -->
+<nav aria-label="Main navigation">
+  <a href="index.html" class="nav-brand">Omar <span>Bakhidhar</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="labs.html" class="active">Labs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" role="navigation">
+  <a href="index.html">Home</a>
+  <a href="cv.html">CV</a>
+  <a href="labs.html">Labs</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page-wrapper">
+
+  <!-- Hero -->
+  <header class="labs-hero" aria-labelledby="labs-title">
+    <div class="section-label reveal">CPIT-405 · Internet Applications</div>
+    <h1 class="section-title reveal reveal-delay-1" id="labs-title">
+      Labs &amp; <em>Projects</em>
+    </h1>
+    <p class="reveal reveal-delay-2" style="color: var(--text-secondary); max-width: 520px; font-size: 0.95rem; margin-top: 0.5rem;">
+      Completed coursework from Spring 2026 — King Abdulaziz University, Faculty of Computing &amp; IT.
+    </p>
+
+    <!-- Summary table -->
+    <div class="reveal reveal-delay-3" style="margin-top: 40px; overflow-x: auto;">
+      <table class="labs-table" aria-label="Labs summary">
+        <thead>
+          <tr>
+            <th scope="col">Lab</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Status</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lab 2</td>
+            <td>HTML Foundations</td>
+            <td><span class="pill">Completed</span></td>
+            <td><a href="lab2/index.html" style="color: var(--viridian-light); font-family: var(--font-mono); font-size: 0.8rem;" aria-label="Open Lab 2">Open →</a></td>
+          </tr>
+          <tr>
+            <td>Lab 3</td>
+            <td>HTML Structure &amp; Semantics</td>
+            <td><span class="pill">Completed</span></td>
+            <td><a href="lab3/index.html" style="color: var(--viridian-light); font-family: var(--font-mono); font-size: 0.8rem;" aria-label="Open Lab 3">Open →</a></td>
+          </tr>
+          <tr>
+            <td>Lab 4</td>
+            <td>CSS Layouts</td>
+            <td><span class="pill">Completed</span></td>
+            <td><a href="lab4/index.html" style="color: var(--viridian-light); font-family: var(--font-mono); font-size: 0.8rem;" aria-label="Open Lab 4">Open →</a></td>
+          </tr>
+          <tr>
+            <td>Lab 5</td>
+            <td>CSS Flexbox &amp; Grid</td>
+            <td><span class="pill">Completed</span></td>
+            <td><a href="lab5/index.html" style="color: var(--viridian-light); font-family: var(--font-mono); font-size: 0.8rem;" aria-label="Open Lab 5">Open →</a></td>
+          </tr>
+          <tr>
+            <td>Lab 6</td>
+            <td>CSS Animations</td>
+            <td><span class="pill">Completed</span></td>
+            <td><a href="lab6/index.html" style="color: var(--viridian-light); font-family: var(--font-mono); font-size: 0.8rem;" aria-label="Open Lab 6">Open →</a></td>
+          </tr>
+          <tr>
+            <td>Lab 7</td>
+            <td>JavaScript Basics</td>
+            <td><span class="pill">Completed</span></td>
+            <td><a href="lab7/index.html" style="color: var(--viridian-light); font-family: var(--font-mono); font-size: 0.8rem;" aria-label="Open Lab 7">Open →</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </header>
+
+  <!-- Lab Cards Grid -->
+  <main>
+    <section aria-labelledby="labs-cards-heading">
+      <h2 id="labs-cards-heading" class="sr-only">Lab Details</h2>
+      <div class="labs-grid">
+
+        <a href="lab2/index.html" class="lab-card reveal reveal-delay-1" aria-label="Lab 2 - HTML Foundations">
+          <div class="lab-number">Lab · 02</div>
+          <div class="lab-title">HTML Foundations</div>
+          <div class="lab-desc">
+            Core HTML structure, document layout, basic tags, headings, paragraphs, links, and semantic markup.
+          </div>
+          <div class="lab-footer">
+            <div class="lab-status">Completed</div>
+            <div class="lab-open">Open <span aria-hidden="true">↗</span></div>
+          </div>
+        </a>
+
+        <a href="lab3/index.html" class="lab-card reveal reveal-delay-2" aria-label="Lab 3 - HTML Structure and Semantics">
+          <div class="lab-number">Lab · 03</div>
+          <div class="lab-title">HTML Structure &amp; Semantics</div>
+          <div class="lab-desc">
+            Semantic HTML elements: header, nav, main, section, article, aside, footer — proper document structure.
+          </div>
+          <div class="lab-footer">
+            <div class="lab-status">Completed</div>
+            <div class="lab-open">Open <span aria-hidden="true">↗</span></div>
+          </div>
+        </a>
+
+        <a href="lab4/index.html" class="lab-card reveal reveal-delay-3" aria-label="Lab 4 - CSS Layouts">
+          <div class="lab-number">Lab · 04</div>
+          <div class="lab-title">CSS Layouts</div>
+          <div class="lab-desc">
+            Box model, positioning, floats, display properties, and constructing page layouts with CSS.
+          </div>
+          <div class="lab-footer">
+            <div class="lab-status">Completed</div>
+            <div class="lab-open">Open <span aria-hidden="true">↗</span></div>
+          </div>
+        </a>
+
+        <a href="lab5/index.html" class="lab-card reveal reveal-delay-1" aria-label="Lab 5 - Flexbox and Grid">
+          <div class="lab-number">Lab · 05</div>
+          <div class="lab-title">Flexbox &amp; Grid</div>
+          <div class="lab-desc">
+            Modern CSS layout systems — flexbox alignment, grid template columns, responsive design patterns.
+          </div>
+          <div class="lab-footer">
+            <div class="lab-status">Completed</div>
+            <div class="lab-open">Open <span aria-hidden="true">↗</span></div>
+          </div>
+        </a>
+
+        <a href="lab6/index.html" class="lab-card reveal reveal-delay-2" aria-label="Lab 6 - CSS Animations">
+          <div class="lab-number">Lab · 06</div>
+          <div class="lab-title">CSS Animations</div>
+          <div class="lab-desc">
+            Keyframes, transitions, transforms, hover effects, and building fluid animated interfaces.
+          </div>
+          <div class="lab-footer">
+            <div class="lab-status">Completed</div>
+            <div class="lab-open">Open <span aria-hidden="true">↗</span></div>
+          </div>
+        </a>
+
+        <a href="lab7/index.html" class="lab-card reveal reveal-delay-3" aria-label="Lab 7 - JavaScript Basics">
+          <div class="lab-number">Lab · 07</div>
+          <div class="lab-title">JavaScript Basics</div>
+          <div class="lab-desc">
+            DOM manipulation, event listeners, variables, functions, and making pages interactive with JS.
+          </div>
+          <div class="lab-footer">
+            <div class="lab-status">Completed</div>
+            <div class="lab-open">Open <span aria-hidden="true">↗</span></div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Assignment Section -->
+    <section id="assignments" style="padding: 0 clamp(20px, 8vw, 120px) 80px;" aria-labelledby="assign-heading">
+      <div class="divider"></div>
+      <div class="section-label reveal">Phase 1</div>
+      <h2 class="section-title reveal reveal-delay-1" id="assign-heading">
+        Portfolio <em>Assignment</em>
+      </h2>
+      <p class="reveal reveal-delay-2" style="color: var(--text-secondary); font-size: 0.95rem; max-width: 520px; margin-bottom: 2.5rem;">
+        CPIT-405 Internet Applications — Assignment 1: HTML &amp; CSS Portfolio. Deadline: 13-04-2026.
+      </p>
+
+      <div class="reveal reveal-delay-3" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px;">
+
+        <div class="glass-card" style="padding: 24px;">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--viridian); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">Requirement</div>
+          <div style="font-weight: 600; margin-bottom: 0.4rem; font-size: 0.95rem;">Home Page</div>
+          <div style="font-size: 0.82rem; color: var(--text-secondary);">Name, student ID, intro, navigation</div>
+          <div style="margin-top: 1rem;"><span class="pill">✓ Done</span></div>
+        </div>
+
+        <div class="glass-card" style="padding: 24px;">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--viridian); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">Requirement</div>
+          <div style="font-weight: 600; margin-bottom: 0.4rem; font-size: 0.95rem;">CV Page</div>
+          <div style="font-size: 0.82rem; color: var(--text-secondary);">Education, skills, experience, certifications</div>
+          <div style="margin-top: 1rem;"><span class="pill">✓ Done</span></div>
+        </div>
+
+        <div class="glass-card" style="padding: 24px;">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--viridian); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">Requirement</div>
+          <div style="font-weight: 600; margin-bottom: 0.4rem; font-size: 0.95rem;">Labs Page</div>
+          <div style="font-size: 0.82rem; color: var(--text-secondary);">All 6 labs with links and organized layout</div>
+          <div style="margin-top: 1rem;"><span class="pill">✓ Done</span></div>
+        </div>
+
+        <div class="glass-card" style="padding: 24px;">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--viridian); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">Requirement</div>
+          <div style="font-weight: 600; margin-bottom: 0.4rem; font-size: 0.95rem;">Contact Page</div>
+          <div style="font-size: 0.82rem; color: var(--text-secondary);">Email, phone, social, working form via FormSubmit</div>
+          <div style="margin-top: 1rem;"><span class="pill">✓ Done</span></div>
+        </div>
+
+        <div class="glass-card" style="padding: 24px;">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--viridian); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">Technical</div>
+          <div style="font-weight: 600; margin-bottom: 0.4rem; font-size: 0.95rem;">Semantic HTML</div>
+          <div style="font-size: 0.82rem; color: var(--text-secondary);">header, nav, main, section, footer throughout</div>
+          <div style="margin-top: 1rem;"><span class="pill">✓ Done</span></div>
+        </div>
+
+        <div class="glass-card" style="padding: 24px;">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--viridian); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">Technical</div>
+          <div style="font-weight: 600; margin-bottom: 0.4rem; font-size: 0.95rem;">External CSS</div>
+          <div style="font-size: 0.82rem; color: var(--text-secondary);">Shared style.css · consistent design system</div>
+          <div style="margin-top: 1rem;"><span class="pill">✓ Done</span></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+</div>
+
+<footer>
+  <div class="footer-left">Omar <span>Bakhidhar</span></div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="footer-right">CPIT-405 · Spring 2026 · ID 2237708</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

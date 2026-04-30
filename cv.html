@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Omar Bakhidhar</title>
+  <meta name="description" content="Curriculum Vitae of Omar Bakhidhar — IT student, developer, and creative professional." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<canvas id="rain-canvas" aria-hidden="true"></canvas>
+
+<!-- Navigation -->
+<nav aria-label="Main navigation">
+  <a href="index.html" class="nav-brand">Omar <span>Bakhidhar</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cv.html" class="active">CV</a></li>
+    <li><a href="labs.html">Labs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" role="navigation">
+  <a href="index.html">Home</a>
+  <a href="cv.html">CV</a>
+  <a href="labs.html">Labs</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page-wrapper">
+
+  <!-- CV Hero -->
+  <header class="cv-hero" aria-labelledby="cv-page-title">
+    <div class="section-label reveal">Curriculum Vitae</div>
+    <h1 class="section-title reveal reveal-delay-1" id="cv-page-title">
+      Omar <em>Bakhidhar</em>
+    </h1>
+    <p class="reveal reveal-delay-2" style="color: var(--text-secondary); font-size: 0.95rem; max-width: 500px;">
+      Information Technology Graduate · King Abdulaziz University · Class of 2026
+    </p>
+  </header>
+
+  <!-- CV Layout -->
+  <main class="cv-layout">
+
+    <!-- ── SIDEBAR ── -->
+    <aside aria-label="CV Sidebar">
+      <div class="cv-profile-card glass-card reveal">
+        <div class="cv-avatar" aria-hidden="true">OB</div>
+        <div class="cv-sidebar-name">Omar Bakhidhar</div>
+        <div class="cv-sidebar-role">IT Graduate · Creative Professional</div>
+
+        <ul class="cv-contact-list" aria-label="Contact details">
+          <li>
+            <a href="mailto:owbakhidhar@gmail.com">
+              <span aria-hidden="true">✉</span>
+              owbakhidhar@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+966565686626">
+              <span aria-hidden="true">📞</span>
+              +966 565 686 626
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn profile">
+              <span aria-hidden="true">💼</span>
+              Omar Bakhidhar
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Location">
+              <span aria-hidden="true">📍</span>
+              Jeddah, Makkah Region
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cv-profile-card glass-card reveal reveal-delay-1" aria-label="CV sections navigation">
+        <nav aria-label="CV sections">
+          <ul class="cv-nav-list">
+            <li><a href="#education">📚 Education</a></li>
+            <li><a href="#experience">💼 Experience</a></li>
+            <li><a href="#skills">⚡ Skills</a></li>
+            <li><a href="#film">🎬 Film & Media</a></li>
+            <li><a href="#certifications">🏅 Certifications</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- ── MAIN CONTENT ── -->
+    <div aria-label="CV details">
+
+      <!-- Summary -->
+      <section class="cv-block reveal" aria-labelledby="summary-heading">
+        <div class="cv-block-header">
+          <h2 class="cv-block-title" id="summary-heading">Professional Summary</h2>
+        </div>
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem;">
+          Information Technology graduate with hands-on experience in IT operations, backend development,
+          and event coordination. Proven ability to manage technical issues, support system delivery, and
+          contribute to large-scale events. I sit at the intersection of technology and culture — equally
+          comfortable debugging systems and coordinating film crews.
+        </p>
+      </section>
+
+      <!-- Education -->
+      <section class="cv-block reveal" id="education" aria-labelledby="edu-heading">
+        <div class="cv-block-header">
+          <h2 class="cv-block-title" id="edu-heading">Education</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-org">King Abdulaziz University</div>
+              <div class="timeline-date">2021 — 2026</div>
+            </div>
+            <div class="timeline-role">Bachelor of Information Technology</div>
+            <ul class="timeline-list" aria-label="Relevant coursework">
+              <li>Database Design &amp; SQL Querying</li>
+              <li>Object-Oriented Programming (Java)</li>
+              <li>Web Development — HTML, JavaScript, Backend Concepts</li>
+              <li>Software Engineering &amp; System Analysis</li>
+              <li>Internet Applications (CPIT-405)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="cv-block reveal" id="experience" aria-labelledby="exp-heading">
+        <div class="cv-block-header">
+          <h2 class="cv-block-title" id="exp-heading">Experience</h2>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-org">Makhraj</div>
+              <div class="timeline-date">Jul 2025 — Present</div>
+            </div>
+            <div class="timeline-role">IT Specialist &amp; PR Coordinator</div>
+            <ul class="timeline-list">
+              <li>Managed IT operations and resolved technical issues across internal systems</li>
+              <li>Handled multiple IT tickets ensuring fast, efficient troubleshooting</li>
+              <li>Coordinated and supported 10+ workshops and large-scale events</li>
+              <li>Collaborated with cross-functional teams to ensure smooth event execution</li>
+              <li>Represented the organization at the Red Sea Film Festival 2025</li>
+              <li>Supported PR activities and improved communication workflows</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-org">National Center for Performance Measurement (Adaa)</div>
+              <div class="timeline-date">Jun 2025 — Aug 2025</div>
+            </div>
+            <div class="timeline-role">IT Summer Trainee</div>
+            <ul class="timeline-list">
+              <li>Contributed to system delivery and backend web development</li>
+              <li>Assisted in maintaining and improving internal systems</li>
+              <li>Handled IT tickets and provided technical support</li>
+              <li>Participated in cross-department meetings to gather requirements</li>
+              <li>Helped improve workflow efficiency and system processes</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="cv-block reveal" id="skills" aria-labelledby="skills-heading">
+        <div class="cv-block-header">
+          <h2 class="cv-block-title" id="skills-heading">Technical Skills</h2>
+        </div>
+
+        <p style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">Development</p>
+        <div class="skills-grid" style="margin-bottom: 2rem;">
+          <div class="skill-item"><div class="skill-name">HTML5</div></div>
+          <div class="skill-item"><div class="skill-name">CSS3</div></div>
+          <div class="skill-item"><div class="skill-name">JavaScript</div></div>
+          <div class="skill-item"><div class="skill-name">Java</div></div>
+          <div class="skill-item"><div class="skill-name">SQL</div></div>
+        </div>
+
+        <p style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">Tools & Platforms</p>
+        <div class="skills-grid" style="margin-bottom: 2rem;">
+          <div class="skill-item"><div class="skill-name">Google Analytics</div></div>
+          <div class="skill-item"><div class="skill-name">Microsoft Office</div></div>
+          <div class="skill-item"><div class="skill-name">GitHub</div></div>
+        </div>
+
+        <p style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">Professional</p>
+        <div class="skills-grid">
+          <div class="skill-item"><div class="skill-name">Leadership</div></div>
+          <div class="skill-item"><div class="skill-name">Teamwork</div></div>
+          <div class="skill-item"><div class="skill-name">Problem Solving</div></div>
+          <div class="skill-item"><div class="skill-name">Detail-Oriented</div></div>
+          <div class="skill-item"><div class="skill-name">PR & Comms</div></div>
+        </div>
+      </section>
+
+      <!-- Film & Media -->
+      <section class="cv-block reveal" id="film" aria-labelledby="film-cv-heading">
+        <div class="cv-block-header">
+          <h2 class="cv-block-title" id="film-cv-heading">Film &amp; Media</h2>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-org">Passing of a Sinner</div>
+              <div class="timeline-date">Upcoming</div>
+            </div>
+            <div class="timeline-role">Extra — Independent Feature Film</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-org">Eat in the Corner</div>
+              <div class="timeline-date">Upcoming</div>
+            </div>
+            <div class="timeline-role">Cast Manager — Independent Production</div>
+            <ul class="timeline-list">
+              <li>Managing talent scheduling and cast logistics</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-org">Red Sea International Film Festival</div>
+              <div class="timeline-date">2025</div>
+            </div>
+            <div class="timeline-role">Official Representative — Makhraj</div>
+            <ul class="timeline-list">
+              <li>Represented Makhraj at Jeddah's premier international film festival</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Languages -->
+      <section class="cv-block reveal" aria-labelledby="lang-heading">
+        <div class="cv-block-header">
+          <h2 class="cv-block-title" id="lang-heading">Languages</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item" style="text-align:left; padding: 16px 20px;">
+            <div style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; margin-bottom: 0.2rem;">Arabic</div>
+            <div class="skill-name">Native</div>
+          </div>
+          <div class="skill-item" style="text-align:left; padding: 16px 20px;">
+            <div style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; margin-bottom: 0.2rem;">English</div>
+            <div class="skill-name">Fluent</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="cv-block reveal" id="certifications" aria-labelledby="cert-heading">
+        <div class="cv-block-header">
+          <h2 class="cv-block-title" id="cert-heading">Certifications</h2>
+        </div>
+        <div class="cert-card">
+          <div>
+            <div class="cert-name">Getting Started with Threat Intelligence and Hunting</div>
+            <div class="cert-issuer">IBM — 2023</div>
+          </div>
+          <span class="pill">IBM</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+</div>
+
+<footer>
+  <div class="footer-left">Omar <span>Bakhidhar</span></div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="labs.html">Labs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="footer-right">CPIT-405 · Spring 2026 · ID 2237708</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

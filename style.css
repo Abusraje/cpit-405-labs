@@ -63,7 +63,7 @@ body {
   width: 100%; height: 100%;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.35;
+  opacity: 0.7;
 }
 
 /* ── Navigation ── */
@@ -738,12 +738,14 @@ body::before {
 .cv-sidebar {
   position: sticky;
   top: calc(var(--nav-height) + 20px);
+  z-index: 10;
+  background: var(--bg);
 }
 
 .cv-profile-card {
   padding: 30px;
   border-radius: var(--radius);
-  background: var(--bg-card);
+  background: rgba(10, 20, 16, 0.97);
   border: 1px solid var(--border);
   margin-bottom: 20px;
 }
